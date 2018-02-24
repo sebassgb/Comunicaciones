@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>STOPGAME</title>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    </head>
+    <body class="w3-rest" >
+        <div class="w3-panel w3-red"><center><h1 class="w3-text-shadow">STOP Online!</h1></center></div>
+    <center><div class="w3-div" style="background-color:#000000; width:50%; opacity:0.9;">   
+        <br/>
+        <br/>
+        <center><button id="iniciar" onClick="iniciar()" class="w3-btn w3-green">¡INICIAR!</button></center>
+       <br/>
+       <center><h2 style="color:white">LA LETRA SELECCIONADA ES: </h2><input readonly="true" id="letra" style="width:30%"class="w3-input w3-hover-green"></center>
+       <br/>
+    <center><button id="stop" onclick="stop()" class="w3-btn w3-red">¡STOP!</button></center>
+    <br></div></center>
+    <CENTER><table class="w3-table-all w3-hoverable w3-centered">
+        <tr class="w3-teal">
+            <td><center><h2>NOMBRE</h2></center></td>
+            <td><center><h2>APELLIDO</h2></center></td>
+            <td><center><h2>CIUDAD</h2></center></td>
+            <td><center><h2>FRUTA</h2></center></td>
+            <td><center><h2>ANIMAL</h2></center></td>
+            <td><center><h2>COSA</h2></center></td>
+            <td><center><h2>TOTAL</h2></center></td>
+        </tr>
+        <tr>
+            <td><input id="nombre"></td>
+            <td><input id="apellido"></td>
+            <td><input id="ciudad"></td>
+            <td><input id="alimento"></td>
+            <td><input id="animal"></td>
+            <td><input id="cosa"></td>
+            <td><center><textarea readonly="true" id="total1" rows="1" cols="5"></textarea></td>
+        </tr>
+        <br>
+        <tr>
+            <td><input readonly="true" id="nombreRes" ></td>
+            <td><input readonly="true" id="apellidoRes" ></td>
+            <td><input readonly="true" id="ciudadRes" ></td>
+            <td><input readonly="true" id="alimentoRes" ></td>
+            <td><input readonly="true" id="animalRes" ></td>
+            <td><input readonly="true" id="cosaRes" ></td>
+            <td><center><textarea readonly="true" id="total2" rows="1" cols="5"></textarea></td>
+        </tr>
+        </table></CENTER>
+        
+       <div id="output"></div>
+       <br>
+
+       
+
+       <script type="text/javascript" src="websocket.js"></script>
+       <script type="text/javascript" src="stopGame.js"></script>
+    </body>
+    
+
+</html>
+
